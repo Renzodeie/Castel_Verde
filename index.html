@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--Css-->
+    <link rel="stylesheet" href="./styles/styles.css" </head>
+
 <body>
-    
+    <header>
+
+        <!--------------NAVARBAR--------------->
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./assets/icons/Logo.jpg" alt="" height="80px>
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        <a class="nav-link" href="./pages/reserva.html">Reserva</a>
+                        <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--------------Carrusel de Fotos--------------->
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/IMG-20250626-WA0092.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/IMG-20250626-WA0031.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/IMG-20250626-WA0068.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <h1>Bienvenidos!!</h1>
+
+            <article class="parrafo_inicial">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maiores temporibus saepe odit
+                    voluptatem iusto reiciendis error provident, libero inventore! Odit suscipit nobis cumque ea
+                    recusandae adipisci vel magni quisquam.
+                    At officiis odit accusantium vero nobis pariatur doloribus dignissimos aut ipsum earum quo rerum,
+                    ducimus eos recusandae unde quis quos! Excepturi sed molestias provident ut quod laboriosam tempore
+                    inventore voluptatum.
+                    Quo obcaecati hic qui atque consequatur! Nemo atque laboriosam rerum? Maiores ea quam quisquam
+                    consequuntur vitae maxime ut quis dolores magnam suscipit dolorum corrupti ducimus reiciendis,
+                    similique est minima blanditiis.
+                    Delectus ullam, at optio mollitia ex esse exercitationem odio. Doloribus quos amet, excepturi ex
+                    odit esse animi. Accusamus distinctio est deleniti dolore. Quasi saepe earum aliquam odio enim vitae
+                    veniam.</p>
+            </article>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h6>
+            <div class="derechos">
+                <p> Todos los derechos reservados - Castelverde.com.ar</p>
+            </div>
+        </h6>
+    </footer>
+    <!-- Bootstraps JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
