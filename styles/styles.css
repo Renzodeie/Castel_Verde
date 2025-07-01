@@ -1,45 +1,42 @@
 /* --------------- Fondo de pantalla---------------*/
 
-body{
+body {
     background: #9FFF9C;
     background: linear-gradient(90deg, rgba(159, 255, 156, 1) 0%, rgba(0, 159, 131, 1) 55%);
 }
 
 /*------------------Titulos------------------------*/
 
-h1{
+h1 {
     text-align: center;
     margin: 50px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin: 30px;
 
 }
 
-h4{
+h4 {
     text-align: center;
 }
 
-.container-fluid{
+.container-fluid {
     font-size: 20px;
     margin: 5px;
-
 }
-
-
 
 
 /*---------------- Parrafos ----------------------*/
 
-.parrafo_inicial{
+.parrafo_inicial {
     display: flex;
     margin: 38px;
 
 }
 
-.derechos{
+.derechos {
 
     display: flex;
     text-align: center;
@@ -47,9 +44,10 @@ h4{
     margin-top: 50px;
 
 }
-.contenido_sobrenosotros{
+
+.contenido_sobrenosotros {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 30px;
     margin: 60px;
 
@@ -58,24 +56,55 @@ h4{
 
 
 /*------------- Fotos ----------------------------*/
-.cuadricula_fotos{
+.cuadricula_fotos {
     display: grid;
-    grid-template-columns:repeat(2,300px);
+    grid-template-columns: repeat(2, 300px);
     padding: 20px;
     gap: 20px;
     justify-content: center;
 }
 
-.imagen-sobrenosotros img{
+.imagen-sobrenosotros img {
     width: 500px;
     border: 1px solid black;
 
-    
+
 }
 
-.cuadricula_fotos img{
+.cuadricula_fotos img {
     height: 180px;
     max-width: 100%;
     border: 1px solid black;
-    
+
+}
+
+/*---------------- Adaptacion a distintas pantallas --------------*/
+@media (min-width: 430px) and (max-width: 768px) {
+
+    body {
+        background: green;
+    }
+
+    .cuadricula_fotos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+        
+    }
+
+
+    .imagen-sobrenosotros img {
+        width: 200px;
+        border: 1px solid black;
+
+    }
+
+    .parrafo_sobrenosotros {
+        font-size: 15px;
+
+    }
+
+
+
 }
