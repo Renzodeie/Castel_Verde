@@ -1,110 +1,134 @@
-/* --------------- Fondo de pantalla---------------*/
-
-body {
-    background: #9FFF9C;
-    background: linear-gradient(90deg, rgba(159, 255, 156, 1) 0%, rgba(0, 159, 131, 1) 55%);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/*------------------Titulos------------------------*/
+body {
+  font-family: "IBM Plex Serif", serif;
+}
 
+/*-------------------------------Fondo de Pantalla--------------------*/
+body {
+  background: #5aec55;
+  background: linear-gradient(90deg, rgb(159, 255, 156) 0%, rgb(0, 159, 131) 55%);
+}
+
+/*-------------------------------Titulos--------------------*/
 h1 {
-    text-align: center;
-    margin: 50px;
+  text-align: center;
+  margin: 50px;
 }
 
 h2 {
-    text-align: center;
-    margin: 30px;
-
+  text-align: center;
+  margin: 30px;
 }
 
 h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .container-fluid {
-    font-size: 20px;
-    margin: 5px;
+  font-size: 20px;
+  margin: 50px;
 }
 
-
-/*---------------- Parrafos ----------------------*/
-
-.parrafo_inicial {
-    display: flex;
-    margin: 38px;
-
-}
-
-.derechos {
-
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 50px;
-
-}
-
-.contenido_sobrenosotros {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 60px;
-
-
-}
-
-
-/*------------- Fotos ----------------------------*/
-.cuadricula_fotos {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    padding: 20px;
-    gap: 20px;
-    justify-content: center;
+/*---------------- Imagenes --------------*/
+.carousel-inner {
+  object-fit: cover;
+  height: 580px;
+  width: 100%;
 }
 
 .imagen-sobrenosotros img {
-    width: 500px;
-    border: 1px solid black;
-
-
+  width: 400px;
+  border: 1px solid black;
 }
 
-.cuadricula_fotos img {
-    height: 180px;
-    max-width: 100%;
-    border: 1px solid black;
+.imagen-ubicacion img {
+  width: 400px;
+  border: 1px solid black;
+}
 
+.cuadricula_fotos {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.cuadricula_fotos .foto1 img {
+  height: 250px;
+}
+
+/*---------------- Parrafo --------------*/
+.parrafo_sobrenosotros {
+  display: flex;
+  font-size: 15px;
+}
+
+.parrafo_servicios {
+  display: flex;
+  font-size: 10px;
+}
+
+.parrafo_inicial {
+  display: flex;
+  margin: 38px;
+  line-height: 2;
+}
+
+.derechos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contenido_sobrenosotros {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 60px;
+  max-width: 1200px;
 }
 
 /*---------------- Adaptacion a distintas pantallas --------------*/
-@media (min-width: 430px) and (max-width: 768px) {
-
-    body {
-        background: green;
-    }
-
-    .cuadricula_fotos {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        gap: 20px;
-        
-    }
-
-
-    .imagen-sobrenosotros img {
-        width: 200px;
-        border: 1px solid black;
-
-    }
-
-    .parrafo_sobrenosotros {
-        font-size: 15px;
-
-    }
-
-
-
+@media (min-width: 300px) and (max-width: 1024px) {
+  body {
+    background: rgb(60, 221, 68);
+  }
+  .carousel-inner {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .cuadricula_fotos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  .contenido_sobrenosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100px;
+  }
+  .contenido_sobrenosotros .imagen-sobrenosotros img {
+    width: 400px;
+    border: 1px solid black;
+  }
+  .parrafo_sobrenosotros {
+    display: flex;
+    font-size: 15px;
+  }
 }
+.derechos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
