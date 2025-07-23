@@ -1,0 +1,14 @@
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.confirm-button{
+    @extend.button;
+    background-color: green;
+
+}

@@ -1,3 +1,6 @@
+@use"../utilities.scss/variables";
+@import"../utilities.scss/mixins.scss";
+
 /*-------------------------------Fondo de Pantalla--------------------*/
 body {
     background: #5aec55;
@@ -36,6 +39,7 @@ h4 {
 
 /*---------------- Imagenes --------------*/
 
+
 .carousel-inner {
     object-fit: cover;
     height: 580px;
@@ -44,8 +48,8 @@ h4 {
 }
 
 .imagen-sobrenosotros img {
-    width: 400px;
-    border: 1px solid white;
+    width: variables.$tamaño_imagen;
+    border: 1px solid variables.$color;
     border-radius: 10px;
 }
 
@@ -54,7 +58,7 @@ h4 {
 
     img {
         width: 400px;
-        border: 1px solid white;
+        border: 1px solid variables.$color;
         border-radius: 10px;
         margin-right: 50px;
 
@@ -67,7 +71,7 @@ h4 {
     margin: 70px;
 
     img {
-        height: 400px;
+        height: variables.$tamaño_img_ser;
         margin-right: 35px;
         border: 3px solid white;
         border-radius: 10px;
@@ -81,7 +85,7 @@ h4 {
     margin: 70px;
 
     img {
-        height: 400px;
+        height: variables.$tamaño_img_ser;
         margin-left: 35px;
         border: 3px solid white;
         border-radius: 10px;
@@ -104,8 +108,7 @@ ul {
 }
 
 .redessociales {
-    display: flex;
-    justify-content: center;
+    @include redes (center);
 
 
     img {
@@ -124,7 +127,7 @@ ul {
 }
 
 .parrafo_inicial {
-    font-size: 20px;
+    font-size: variables.$tamaño_parrafos;
     display: flex;
     margin: 38px;
     line-height: 2.00;
@@ -133,11 +136,7 @@ ul {
 }
 
 .derechos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 50px;
-
+    @include derechos(center, center, 50px);
 }
 
 .contenido_sobrenosotros {
@@ -149,13 +148,15 @@ ul {
 }
 
 .parrafo_ser_derecha p {
-    font-size: 20px;
+    font-size: variables.$tamaño_parrafos;
 }
 
 .parrafo_ser_izquierda p {
-    font-size: 20px;
+    font-size: variables.$tamaño_parrafos;
 
 }
+
+
 
 .reserva {
     display: flex;
@@ -179,7 +180,7 @@ ul {
 @media (min-width: 300px) and (max-width: 1024px) {
 
     body {
-        background: rgb(60, 221, 68);
+        background: rgb(10, 212, 95);
     }
 
     .carousel-inner {
@@ -189,13 +190,6 @@ ul {
 
     }
 
-    .cuadricula_fotos {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        gap: 20px;
-
-    }
 
     .contenido_sobrenosotros {
         display: flex;
@@ -211,10 +205,64 @@ ul {
         }
     }
 
+    /*---------------- Parrafos --------------*/
+
     .parrafo_sobrenosotros {
         display: flex;
         font-size: 15px;
 
+    }
+
+    .parrafo_inicial {
+        font-size: 10px;
+        display: flex;
+        margin: 38px;
+        line-height: 2.00;
+
+    }
+
+
+    .parrafo_ser_derecha p {
+        font-size: 10px;
+    }
+
+    .parrafo_ser_izquierda p {
+        font-size: 10px;
+
+    }
+
+    .parrafo_ser_izquierda h4 {
+        margin-top: 5px;
+    }
+
+    /*---------------- Imagenes --------------*/
+
+    .imagen_izquierda {
+        display: flex;
+        flex-direction: row;
+        margin: 35px;
+
+        img {
+            height: 150px;
+            margin-right: 15px;
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+    }
+
+    .imagen_derecha {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 35px;
+
+        img {
+            height: 150px;
+            margin-left: 15px;
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
     }
 
 

@@ -1,0 +1,12 @@
+@mixin derechos ($text,$justify, $margin){
+    display: flex;
+    text-align: $text;
+    justify-content: $justify;
+    margin-top: $margin;
+}
+
+
+@mixin redes ($justify){
+    display: flex;
+    justify-content: $justify;
+}
