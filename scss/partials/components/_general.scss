@@ -267,14 +267,6 @@ ul {
     /*---------------- Imagenes --------------*/
 
 
-    .carousel-inner {
-        object-fit: cover;
-        height: 580px;
-        width: auto;
-
-    }
-
-
     .imagen_izquierda {
         display: flex;
         flex-direction: column;
@@ -310,9 +302,9 @@ ul {
         flex-direction: column;
 
         img {
-            width: 100px;
+            width: 180px;
             border: 1px solid variables.$color;
-            margin: 20px;
+            margin: 10px;
 
 
         }
@@ -423,13 +415,6 @@ ul {
 
     /*---------------- Imagenes --------------*/
 
-    .carousel-inner {
-        object-fit: cover;
-        height: 580px;
-        width: 100%;
-
-    }
-
     .imagen_izquierda {
         display: flex;
         flex-direction: column;
@@ -514,16 +499,6 @@ ul {
     }
 
     /*----------------Imagenes --------------------------*/
-
-
-
-    .carousel-inner {
-        object-fit: cover;
-        height: 580px;
-        width: 100%;
-
-    }
-
 
     .redessociales img {
         height: 40px;

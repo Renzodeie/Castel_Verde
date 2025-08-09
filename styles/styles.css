@@ -222,11 +222,6 @@ ul {
     font-size: 9px;
   }
   /*---------------- Imagenes --------------*/
-  .carousel-inner {
-    object-fit: cover;
-    height: 580px;
-    width: auto;
-  }
   .imagen_izquierda {
     display: flex;
     flex-direction: column;
@@ -256,9 +251,9 @@ ul {
     flex-direction: column;
   }
   .imagen-ubicacion img {
-    width: 100px;
+    width: 180px;
     border: 1px solid white;
-    margin: 20px;
+    margin: 10px;
   }
   .reserva {
     display: flex;
@@ -331,11 +326,6 @@ ul {
     margin-top: 5px;
   }
   /*---------------- Imagenes --------------*/
-  .carousel-inner {
-    object-fit: cover;
-    height: 580px;
-    width: 100%;
-  }
   .imagen_izquierda {
     display: flex;
     flex-direction: column;
@@ -399,11 +389,6 @@ ul {
     margin: revert;
   }
   /*----------------Imagenes --------------------------*/
-  .carousel-inner {
-    object-fit: cover;
-    height: 580px;
-    width: 100%;
-  }
   .redessociales img {
     height: 40px;
   }
