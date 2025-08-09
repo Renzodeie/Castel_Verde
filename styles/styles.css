@@ -29,11 +29,6 @@ h4 {
   text-align: center;
 }
 
-.container-fluid {
-  font-size: 20px;
-  margin: 50px;
-}
-
 .parrafo_ser_izquierda h4 {
   margin-top: 90px;
 }
@@ -43,12 +38,6 @@ h4 {
 }
 
 /*---------------- Imagenes --------------*/
-.carousel-inner {
-  object-fit: cover;
-  height: 580px;
-  width: 100%;
-}
-
 .imagen-sobrenosotros img {
   width: 400px;
   border: 1px solid white;
@@ -153,6 +142,7 @@ ul {
   flex-direction: row;
 }
 .reserva img {
+  height: 450px;
   margin: 80px;
   border: 3px solid white;
   border-radius: 10px;
@@ -164,31 +154,166 @@ ul {
 }
 
 /*---------------- Adaptacion a distintas pantallas --------------*/
-@media (min-width: 300px) and (max-width: 1024px) {
-  body {
-    background: rgb(10, 212, 95);
+/*---------------- Adaptacion a distintas pantallas --------------*/
+/*---------------- Adaptacion a distintas pantallas --------------*/
+/*---------------- Adaptacion a distintas pantallas --------------*/
+@media (max-width: 300px) {
+  /*---------------- Titulos --------------*/
+  h1 {
+    font-size: 15px;
+    margin: 25px;
   }
-  .carousel-inner {
-    object-fit: cover;
-    height: 250px;
-    width: 100%;
+  h2 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 8px;
+  }
+  body {
+    background: #5aec55;
+    background: linear-gradient(90deg, rgb(159, 255, 156) 0%, rgb(0, 159, 131) 55%);
   }
   .contenido_sobrenosotros {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
     max-width: 100px;
   }
   .contenido_sobrenosotros .imagen-sobrenosotros img {
-    width: 400px;
-    border: 1px solid black;
+    width: 175px;
+    border: 1px solid white;
   }
   /*---------------- Parrafos --------------*/
   .parrafo_sobrenosotros {
     display: flex;
+    width: 190px;
+    font-size: 9px;
+    margin: 10px;
+  }
+  .parrafo_inicial {
+    font-size: 8px;
+    display: flex;
+    margin: 20px;
+    line-height: 2;
+  }
+  .parrafo_ser_derecha {
+    margin-top: 25px;
+  }
+  .parrafo_ser_derecha p {
+    font-size: 8px;
+  }
+  .parrafo_ser_izquierda {
+    margin-top: 25px;
+  }
+  .parrafo_ser_izquierda p {
+    font-size: 8px;
+    margin-top: 25px;
+  }
+  .parrafo_ser_izquierda h4 {
+    margin-top: 5px;
+  }
+  .servicios_castel {
+    margin: 25px;
+    font-size: 10px;
+  }
+  .derechos p {
+    font-size: 9px;
+  }
+  /*---------------- Imagenes --------------*/
+  .carousel-inner {
+    object-fit: cover;
+    height: 580px;
+    width: auto;
+  }
+  .imagen_izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+  }
+  .imagen_izquierda img {
+    height: 100px;
+    margin-right: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .imagen_derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+  }
+  .imagen_derecha img {
+    height: 100px;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .imagen-ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen-ubicacion img {
+    width: 100px;
+    border: 1px solid white;
+    margin: 20px;
+  }
+  .reserva {
+    display: flex;
+    flex-direction: row;
+  }
+  .reserva img {
+    height: 80px;
+    margin: 18px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  .redessociales img {
+    height: 25px;
+  }
+}
+@media (min-width: 301px) and (max-width: 749px) {
+  body {
+    background: #5aec55;
+    background: linear-gradient(90deg, rgb(159, 255, 156) 0%, rgb(0, 159, 131) 55%);
+  }
+  /*---------------- Titulos --------------*/
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
     font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  /*---------------- Parrafos --------------*/
+  .servicios_castel {
+    margin: 30px;
+    font-size: 13px;
+  }
+  .contenido_sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 100px;
+  }
+  .contenido_sobrenosotros .imagen-sobrenosotros img {
+    width: 350px;
+    border: 1px solid white;
+  }
+  .parrafo_sobrenosotros {
+    display: flex;
+  }
+  .parrafo_sobrenosotros p {
+    font-size: 15px;
+    margin: 10px;
   }
   .parrafo_inicial {
     font-size: 10px;
@@ -206,9 +331,14 @@ ul {
     margin-top: 5px;
   }
   /*---------------- Imagenes --------------*/
+  .carousel-inner {
+    object-fit: cover;
+    height: 580px;
+    width: 100%;
+  }
   .imagen_izquierda {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 35px;
   }
   .imagen_izquierda img {
@@ -219,7 +349,7 @@ ul {
   }
   .imagen_derecha {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 35px;
   }
   .imagen_derecha img {
@@ -227,6 +357,93 @@ ul {
     margin-left: 15px;
     border: 2px solid white;
     border-radius: 10px;
+  }
+  .imagen-ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen-ubicacion img {
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  .redessociales img {
+    height: 40px;
+  }
+  .reserva img {
+    height: 200px;
+    margin: 60px;
+    border: 2px solid white;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  body {
+    background: #5aec55;
+    background: linear-gradient(90deg, rgb(159, 255, 156) 0%, rgb(0, 159, 131) 55%);
+  }
+  /*----------------Textos y titulos --------------------------*/
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 25px;
+    margin: 20px;
+  }
+  p {
+    font-size: 20px;
+    margin: revert;
+  }
+  /*----------------Imagenes --------------------------*/
+  .carousel-inner {
+    object-fit: cover;
+    height: 580px;
+    width: 100%;
+  }
+  .redessociales img {
+    height: 40px;
+  }
+  .imagen_izquierda {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+  }
+  .imagen_izquierda img {
+    height: 150px;
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .imagen_derecha {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+  }
+  .imagen_derecha img {
+    height: 150px;
+    margin-left: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .reserva img {
+    height: 230px;
+    margin: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .imagen-ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen-ubicacion img {
+    width: 320px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 50px;
   }
 }
 .derechos {
